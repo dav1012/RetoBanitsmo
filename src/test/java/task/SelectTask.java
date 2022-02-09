@@ -30,15 +30,6 @@ public class SelectTask implements Task {
 			e.printStackTrace();
 		}
 		
-		actor.attemptsTo(Click.on(SelectUi.LIBRO_1));
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		
 	}
 	
 	

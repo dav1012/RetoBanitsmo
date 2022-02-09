@@ -9,7 +9,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @CucumberOptions(
 		
 		features = "src/test/resources/features/reto.feature",
-		tags = "@seleccion",
+		tags = "@Prueba",
 		glue = "stepdefinitions"
 		
 			
@@ -18,9 +18,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 public class SelectRunner {
 	
 	
-	
-	
-	
+
 	
 
 }

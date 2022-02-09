@@ -4,6 +4,7 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 
 
 import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -41,7 +42,7 @@ public class SelectStep {
         
     }
 
-    @Then("^el usuario va al carrito de compras$")
+    @And("^el usuario va al carrito de compras$")
     public void el_usuario_va_al_carrito_de_compras()  {
     	
     	theActorCalled("usuario").attemptsTo(CarritoTask.Carrito());

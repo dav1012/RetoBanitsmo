@@ -1,10 +1,10 @@
 
 Feature: reto prueba banistmo
 
-  @seleccion
-  Scenario Outline: seleccionar
+  @Prueba
+  Scenario Outline: Automatizacion prueba
     Given el usuario abre la pagina web
     When  el usuario agrega libros
-    Then el usuario va al carrito de compras
-
+    And   el usuario va al carrito de compras
+    Then  el usuario borra libro
 
