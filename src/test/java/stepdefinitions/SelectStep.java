@@ -52,15 +52,15 @@ public class SelectStep {
       
     }
     
-    @Then("^el usuario borra libro$")
+    @And("^el usuario borra libro$")
     public void el_usuario_borra_libro() {
        
     	theActorCalled("usuario").attemptsTo(BorrarTask.Borrar());
     	
     }
     
-    @And("^el usuario valida el total $")
-    public void el_usuario_valide_el_total() {
+    @Then("^el usuario valida el total$")
+    public void el_usuario_valida_el_total() {
         
     	System.out.println(Question1.Value().answeredBy(theActorInTheSpotlight()));
     	
