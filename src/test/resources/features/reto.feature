@@ -7,4 +7,5 @@ Feature: reto prueba banistmo
     When  el usuario agrega libros
     And   el usuario va al carrito de compras
     Then  el usuario borra libro
+    And   el usuario valida el total 
 

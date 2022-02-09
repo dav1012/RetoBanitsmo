@@ -1,6 +1,7 @@
 package stepdefinitions;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
+import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 
 import io.cucumber.java.Before;
@@ -13,6 +14,7 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import question.Question1;
 import task.BorrarTask;
 import task.CarritoTask;
 import task.SelectTask;
@@ -56,6 +58,18 @@ public class SelectStep {
     	theActorCalled("usuario").attemptsTo(BorrarTask.Borrar());
     	
     }
+    
+    @And("^el usuario valida el total $")
+    public void el_usuario_valide_el_total() {
+        
+    	System.out.println(Question1.Value().answeredBy(theActorInTheSpotlight()));
+    	
+    	
+    }
+
+    
+    
+    
     
 
 }
