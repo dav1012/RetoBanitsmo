@@ -13,6 +13,7 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import task.BorrarTask;
 import task.CarritoTask;
 import task.SelectTask;
 import ui.SelectUi;
@@ -47,6 +48,13 @@ public class SelectStep {
     	
     	theActorCalled("usuario").attemptsTo(CarritoTask.Carrito());
       
+    }
+    
+    @Then("^el usuario borra libro$")
+    public void el_usuario_borra_libro() {
+       
+    	theActorCalled("usuario").attemptsTo(BorrarTask.Borrar());
+    	
     }
     
 
