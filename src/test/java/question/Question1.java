@@ -10,7 +10,7 @@ public class Question1 implements Question<String> {
 	@Override
 	public String answeredBy(Actor actor) {
 		
-		return BrowseTheWeb.as(actor).find(SelectUi.VALIDAR_TOTAL).getText();
+		return BrowseTheWeb.as(actor).find(SelectUi.VALIDAR_TOTAL).getText().trim();
 	}
 	
 	public static Question<String> Value(){

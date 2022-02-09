@@ -2,6 +2,8 @@ package stepdefinitions;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static org.hamcrest.core.IsEqual.equalTo;
 
 
 import io.cucumber.java.Before;
@@ -61,10 +63,10 @@ public class SelectStep {
     
     @Then("^el usuario valida el total$")
     public void el_usuario_valida_el_total() {
-        
-    	System.out.println(Question1.Value().answeredBy(theActorInTheSpotlight()));
+    		
     	
-    	
+    theActorInTheSpotlight().should(seeThat("muestra el valor correcto", Question1.Value(),equalTo("₹262.50")));
+   
     }
 
     
